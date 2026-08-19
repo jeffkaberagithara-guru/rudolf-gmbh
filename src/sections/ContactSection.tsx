@@ -6,20 +6,20 @@ import { MEDIA } from '../utils/media'
 const contactItems = [
   {
     icon: Phone,
-    label: 'Telefon',
+    label: 'Phone',
     value: '+43 1 XXX XXXX',
     href: 'tel:+431XXXXXXXX',
   },
   {
     icon: Mail,
-    label: 'E-Mail',
+    label: 'Email',
     value: 'office@rudolf-gmbh.at',
     href: 'mailto:office@rudolf-gmbh.at',
   },
   {
     icon: MapPin,
-    label: 'Adresse',
-    value: 'Kriemhildplatz 9, 1150 Wien',
+    label: 'Address',
+    value: 'Kriemhildplatz 9, 1150 Vienna',
     href: 'https://maps.google.com/?q=Kriemhildplatz+9+1150+Wien',
   },
   {
@@ -38,8 +38,8 @@ export default function ContactSection() {
     <section
       id="kontakt"
       ref={sectionRef}
-      className="relative py-24 md:py-36 lg:py-44 bg-navy-950 overflow-hidden"
-      aria-label="Kontakt"
+      className="relative min-h-screen py-24 md:py-32 lg:py-40 bg-navy-950 overflow-hidden flex items-center"
+      aria-label="Contact"
     >
       <div className="absolute inset-0 opacity-20">
         <img
@@ -60,7 +60,7 @@ export default function ContactSection() {
               transition={{ duration: 0.8, delay: 0.2, ease: [0.16, 1, 0.3, 1] }}
             >
               <span className="text-accent-light text-[0.65rem] tracking-[0.2em] uppercase font-semibold block mb-4">
-                Kontakt
+                Contact
               </span>
             </motion.div>
 
@@ -70,8 +70,8 @@ export default function ContactSection() {
               animate={isInView ? { opacity: 1, y: 0 } : {}}
               transition={{ duration: 0.8, delay: 0.35, ease: [0.16, 1, 0.3, 1] }}
             >
-              CONTACTIEREN{' '}
-              <span className="text-accent-light">SIE RUDOLF.</span>
+              CONTACT{' '}
+              <span className="text-accent-light">RUDOLF.</span>
             </motion.h2>
 
             <motion.p
@@ -80,8 +80,8 @@ export default function ContactSection() {
               animate={isInView ? { opacity: 1, y: 0 } : {}}
               transition={{ duration: 0.8, delay: 0.5, ease: [0.16, 1, 0.3, 1] }}
             >
-              Rufen Sie uns an oder schreiben Sie uns — wir freuen uns auf Ihre
-              Anfrage und melden uns schnellstmöglich bei Ihnen.
+              Call us or write to us — we look forward to your
+              enquiry and will get back to you as soon as possible.
             </motion.p>
 
             <div className="space-y-6">
@@ -140,7 +140,7 @@ export default function ContactSection() {
               animate={isInView ? { opacity: 1, y: 0 } : {}}
               transition={{ duration: 0.6, delay: 0.8, ease: [0.16, 1, 0.3, 1] }}
             >
-              In Google Maps öffnen
+              Open in Google Maps
               <ArrowRight size={14} className="transition-transform duration-300 group-hover:translate-x-1" />
             </motion.a>
           </motion.div>

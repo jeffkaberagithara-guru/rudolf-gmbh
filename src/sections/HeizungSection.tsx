@@ -28,8 +28,8 @@ export default function HeizungSection() {
     <section
       id="heizung"
       ref={sectionRef}
-      className="relative h-[80svh] md:h-[90svh] min-h-[600px] overflow-hidden"
-      aria-label="Heizungsinstallationen"
+      className="relative min-h-[100svh] overflow-hidden flex items-center"
+      aria-label="Heating Installations"
     >
       <motion.div
         className="absolute inset-0"
@@ -64,7 +64,7 @@ export default function HeizungSection() {
             className="mb-4"
           >
             <span className="text-accent-light text-[0.65rem] tracking-[0.2em] uppercase font-semibold">
-              03 · Heizung
+              03 · Heating
             </span>
           </motion.div>
 
@@ -74,7 +74,7 @@ export default function HeizungSection() {
             animate={isInView ? { opacity: 1, y: 0 } : {}}
             transition={{ duration: 0.9, delay: 0.35, ease: [0.16, 1, 0.3, 1] }}
           >
-            HEIZUNGS<span className="block text-accent-light">INSTALLATIONEN</span>
+            HEATING<span className="block text-accent-light">INSTALLATIONS.</span>
           </motion.h2>
 
           <motion.p
@@ -83,9 +83,9 @@ export default function HeizungSection() {
             animate={isInView ? { opacity: 1, y: 0 } : {}}
             transition={{ duration: 0.8, delay: 0.55, ease: [0.16, 1, 0.3, 1] }}
           >
-            Moderne Heizungstechnik für Ihren Komfort. Wir installieren
-            hoch Effiziente Heizsysteme — individuell, zuverlässig und nach den
-            höchsten österreichischen Standards.
+            Modern heating technology for your comfort. We install
+            highly efficient heating systems — individually, reliably and to the
+            highest Austrian standards.
           </motion.p>
 
           <motion.div
@@ -101,7 +101,7 @@ export default function HeizungSection() {
                 document.querySelector('#kontakt')?.scrollIntoView({ behavior: 'smooth' })
               }}
             >
-              Heizungsberatung vereinbaren
+              Book Heating Consultation
             </a>
           </motion.div>
         </motion.div>

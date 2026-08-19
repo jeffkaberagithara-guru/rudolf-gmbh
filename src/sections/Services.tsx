@@ -8,8 +8,8 @@ const services = [
     id: 'gas',
     number: '01',
     title: 'GAS',
-    subtitle: 'Gasinstallationen',
-    description: 'Professionelle Gasinstallation, Wartung und Prüfung für Ihre Sicherheit und den optimalen Betrieb.',
+    subtitle: 'Gas Installations',
+    description: 'Professional gas installation, maintenance and inspection for your safety and optimal operation.',
     icon: Flame,
     image: MEDIA.images.gas,
     href: '#gas',
@@ -17,9 +17,9 @@ const services = [
   {
     id: 'wasser',
     number: '02',
-    title: 'WASSER',
-    subtitle: 'Wasserinstallationen',
-    description: 'Moderne Wasserinstallationen, Rohrleitungen und Sanitärlösungen für Wohn- und Gewerbeobjekte.',
+    title: 'WATER',
+    subtitle: 'Water Installations',
+    description: 'Modern water installations, pipework and sanitary solutions for residential and commercial properties.',
     icon: Droplets,
     image: MEDIA.images.water,
     href: '#wasser',
@@ -27,9 +27,9 @@ const services = [
   {
     id: 'heizung',
     number: '03',
-    title: 'HEIZUNG',
-    subtitle: 'Heizungsinstallationen',
-    description: 'Effiziente Heizungslösungen — von der Installation bis zur Wartung für optimalen Komfort.',
+    title: 'HEATING',
+    subtitle: 'Heating Installations',
+    description: 'Efficient heating solutions — from installation to maintenance for optimal comfort.',
     icon: Thermometer,
     image: MEDIA.images.heating,
     href: '#heizung',
@@ -37,9 +37,9 @@ const services = [
   {
     id: 'sanitaer',
     number: '04',
-    title: 'SANITÄR',
-    subtitle: 'Bad & Sanitär',
-    description: 'Bädergestaltung, Sanitärinstallationen und hochwertige Ausstattung nach Ihren Wünschen.',
+    title: 'SANITARY',
+    subtitle: 'Bathroom & Sanitary',
+    description: 'Bathroom design, sanitary installations and high-quality fittings tailored to your wishes.',
     icon: Bath,
     image: MEDIA.images.bathroom,
     href: '#sanitaer',
@@ -72,8 +72,8 @@ export default function Services() {
     <section
       id="services"
       ref={sectionRef}
-      className="relative py-24 md:py-36 lg:py-44 bg-warm-50"
-      aria-label="Unsere Leistungen"
+      className="relative min-h-screen py-24 md:py-32 lg:py-40 bg-warm-50 flex items-center"
+      aria-label="Our Services"
     >
       <div className="mx-auto max-w-[1400px] px-6 md:px-10 lg:px-16">
         <motion.div
@@ -83,11 +83,11 @@ export default function Services() {
           className="mb-16 md:mb-24"
         >
           <span className="text-accent text-[0.7rem] tracking-[0.2em] uppercase font-semibold block mb-4">
-            Leistungen
+            Services
           </span>
           <h2 className="font-display text-navy-900 text-[clamp(2rem,4vw,3.5rem)] leading-[1.05] font-bold tracking-[-0.02em] max-w-2xl">
-            Technische Expertise{' '}
-            <span className="text-steel-400">mitoggler.</span>
+            Technical Expertise{' '}
+            <span className="text-steel-400">you can trust.</span>
           </h2>
         </motion.div>
 
@@ -154,7 +154,7 @@ function ServiceCard({
             {service.description}
           </p>
           <div className="flex items-center gap-2 text-white/70 text-[0.75rem] font-semibold tracking-[0.08em] uppercase transition-colors duration-300 group-hover:text-white">
-            <span>Mehr erfahren</span>
+            <span>Learn More</span>
             <ArrowRight
               size={14}
               className="transition-transform duration-[300ms] group-hover:translate-x-2"

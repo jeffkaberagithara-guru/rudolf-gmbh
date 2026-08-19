@@ -18,8 +18,8 @@ export default function SanitaerSection() {
     <section
       id="sanitaer"
       ref={sectionRef}
-      className="relative py-24 md:py-36 lg:py-44 bg-warm-50 overflow-hidden"
-      aria-label="Bad & Sanitär"
+      className="relative min-h-screen py-24 md:py-32 lg:py-40 bg-warm-50 overflow-hidden flex items-center"
+      aria-label="Bathroom & Sanitary"
     >
       <div className="mx-auto max-w-[1400px] px-6 md:px-10 lg:px-16">
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-10 lg:gap-16 items-center">
@@ -49,7 +49,7 @@ export default function SanitaerSection() {
               transition={{ duration: 0.8, delay: 0.3, ease: [0.16, 1, 0.3, 1] }}
             >
               <span className="text-accent text-[0.65rem] tracking-[0.2em] uppercase font-semibold block mb-3">
-                04 · Bad & Sanitär
+                04 · Bathroom & Sanitary
               </span>
             </motion.div>
 
@@ -59,7 +59,7 @@ export default function SanitaerSection() {
               animate={isInView ? { opacity: 1, y: 0 } : {}}
               transition={{ duration: 0.8, delay: 0.45, ease: [0.16, 1, 0.3, 1] }}
             >
-              BAD & SANITÄR<span className="text-steel-300">.</span>
+              BATHROOM & SANITARY<span className="text-steel-300">.</span>
             </motion.h2>
 
             <motion.h3
@@ -68,7 +68,7 @@ export default function SanitaerSection() {
               animate={isInView ? { opacity: 1, y: 0 } : {}}
               transition={{ duration: 0.8, delay: 0.6, ease: [0.16, 1, 0.3, 1] }}
             >
-              Bädergestaltung & Sanitär
+              Bathroom Design & Sanitary
             </motion.h3>
 
             <motion.p
@@ -77,9 +77,9 @@ export default function SanitaerSection() {
               animate={isInView ? { opacity: 1, y: 0 } : {}}
               transition={{ duration: 0.8, delay: 0.75, ease: [0.16, 1, 0.3, 1] }}
             >
-              Ihr Traumbad wird Wirklichkeit. Wir planen, installieren und gestalten
-              Bäder mit höchster Handwerkskunst — von der ersten Beratung bis zum
-              letzten Detail.
+              Your dream bathroom becomes reality. We plan, install and design
+              bathrooms with the highest craftsmanship — from the first consultation to the
+              last detail.
             </motion.p>
 
             <motion.div
@@ -95,7 +95,7 @@ export default function SanitaerSection() {
                   document.querySelector('#kontakt')?.scrollIntoView({ behavior: 'smooth' })
                 }}
               >
-                Baderatung anfragen
+                Request Bathroom Consultation
                 <ArrowRight size={16} className="transition-transform duration-300 group-hover:translate-x-1" />
               </a>
             </motion.div>

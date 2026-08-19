@@ -4,9 +4,9 @@ import { MEDIA } from '../utils/media'
 import { useReducedMotion } from '../hooks/useAnimations'
 
 const words = [
-  { number: '01', text: 'PRÄZISION.' },
-  { number: '02', text: 'TECHNIK.' },
-  { number: '03', text: 'ZUVERLÄSSIGKEIT.' },
+  { number: '01', text: 'PRECISION.' },
+  { number: '02', text: 'TECHNOLOGY.' },
+  { number: '03', text: 'RELIABILITY.' },
 ]
 
 export default function CraftsmanshipSection() {
@@ -55,7 +55,7 @@ export default function CraftsmanshipSection() {
     <section
       ref={sectionRef}
       className="relative h-[300vh]"
-      aria-label="Handwerkskunst — Präzision, Technik, Zuverlässigkeit"
+      aria-label="Craftsmanship — Precision, Technology, Reliability"
     >
       <div className="sticky top-0 h-screen overflow-hidden">
         <motion.div
@@ -112,7 +112,7 @@ export default function CraftsmanshipSection() {
                     RUDOLF GmbH
                   </h2>
                   <p className="text-white/50 text-sm md:text-base tracking-[0.1em] uppercase">
-                    Kriemhildplatz 9 · 1150 Wien
+                    Kriemhildplatz 9 · 1150 Vienna
                   </p>
                 </motion.div>
               )}

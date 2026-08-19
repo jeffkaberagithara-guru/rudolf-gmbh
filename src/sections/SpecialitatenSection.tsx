@@ -17,8 +17,8 @@ export default function SpecialitatenSection() {
   return (
     <section
       ref={sectionRef}
-      className="relative py-24 md:py-36 lg:py-44 bg-white overflow-hidden"
-      aria-label="Specialitäten für Jung & Alt"
+      className="relative min-h-screen py-24 md:py-32 lg:py-40 bg-white overflow-hidden flex items-center"
+      aria-label="Specialties for Young & Old"
     >
       <div className="mx-auto max-w-[1400px] px-6 md:px-10 lg:px-16">
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-10 lg:gap-20 items-center">
@@ -30,7 +30,7 @@ export default function SpecialitatenSection() {
               transition={{ duration: 0.8, delay: 0.2, ease: [0.16, 1, 0.3, 1] }}
             >
               <span className="text-accent text-[0.65rem] tracking-[0.2em] uppercase font-semibold block mb-3">
-                Für Jung & Alt
+                For Young & Old
               </span>
             </motion.div>
 
@@ -41,8 +41,8 @@ export default function SpecialitatenSection() {
               animate={isInView ? { opacity: 1, y: 0 } : {}}
               transition={{ duration: 0.8, delay: 0.35, ease: [0.16, 1, 0.3, 1] }}
             >
-              Komfort, der sich{' '}
-              <span className="text-accent">anfühlt wie zuhause</span>
+              Comfort that feels{' '}
+              <span className="text-accent">like home</span>
             </motion.h2>
 
             <motion.p
@@ -52,9 +52,9 @@ export default function SpecialitatenSection() {
               animate={isInView ? { opacity: 1, y: 0 } : {}}
               transition={{ duration: 0.8, delay: 0.5, ease: [0.16, 1, 0.3, 1] }}
             >
-              Ob junger Familien oder Generation — wir schaffen Wohnräume, in denen
-              sich jeder wohlfühlt. Warmes Wasser, perfekte Heizung, funktionale
-              Bäder. Technik, die im Alltag spürbar wird.
+              Whether young families or generations — we create living spaces where
+              everyone feels at home. Warm water, perfect heating, functional
+              bathrooms. Technology that makes a difference in everyday life.
             </motion.p>
 
             <motion.p
@@ -64,8 +64,8 @@ export default function SpecialitatenSection() {
               animate={isInView ? { opacity: 1, y: 0 } : {}}
               transition={{ duration: 0.8, delay: 0.65, ease: [0.16, 1, 0.3, 1] }}
             >
-              Unsere Kunden vertrauen uns seit über 30 Jahren. Wir verstehen,
-              dass jede Wohnung und jeder Bewohner individuelle Anforderungen hat.
+              Our customers have trusted us for over 30 years. We understand
+              that every apartment and every resident has individual requirements.
             </motion.p>
           </div>
 
@@ -85,10 +85,10 @@ export default function SpecialitatenSection() {
               <div className="absolute bottom-6 left-6 right-6">
                 <div className="backdrop-blur-sm bg-white/10 border border-white/20 rounded-sm px-5 py-3 inline-block">
                   <p className="text-white text-sm font-medium tracking-wide">
-                    Seit über 30 Jahren in Wien
+                    Over 30 years in Vienna
                   </p>
                   <p className="text-white/60 text-xs mt-1">
-                    Ihr Vertrauen ist unser Antrieb
+                    Your trust drives us forward
                   </p>
                 </div>
               </div>

@@ -1,8 +1,9 @@
 export const MEDIA = {
   videos: {
     hero: '/videos/Technician_inspecting_heating_system.mp4',
-    heating: '/videos/heating-inspection.mp4',
-    water: '/videos/water-installation.mp4',
+    gas: '/videos/Gas Installation.mp4',
+    heating: '/videos/Technician_inspecting_residential_heating_adjustment.mp4',
+    water: '/videos/Plumber_installing_modern_water.mp4',
     bathroom: '/videos/bathroom-reveal.mp4',
     craftsmanship: '/videos/craftsmanship-hands.mp4',
     vienna: '/videos/vienna-establishing.mp4',
@@ -19,10 +20,10 @@ export const MEDIA = {
   },
   images: {
     heroAlternative: '/images/hero-apartment.jpg',
-    gas: '/images/gas-technician.jpg',
-    water: '/images/water-pipes.jpg',
-    heating: '/images/heating-system.jpg',
-    bathroom: '/images/bathroom-luxury.jpg',
+    gas: '/images/Gas installation.png',
+    water: '/images/Water Installation.png',
+    heating: '/images/Heating Systems.jpg',
+    bathroom: '/images/Sanitary.jpg',
     company: '/images/company-portrait.jpg',
     team: '/images/team-photo.jpg',
     vienna: '/images/vienna-exterior.jpg',

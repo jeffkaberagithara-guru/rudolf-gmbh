@@ -20,8 +20,8 @@ export default function UnternehmenSection() {
     <section
       id="unternehmen"
       ref={sectionRef}
-      className="relative py-24 md:py-36 lg:py-44 bg-white overflow-hidden"
-      aria-label="Unternehmen"
+      className="relative min-h-screen py-24 md:py-32 lg:py-40 bg-white overflow-hidden flex items-center"
+      aria-label="Company"
     >
       <div className="mx-auto max-w-[1400px] px-6 md:px-10 lg:px-16">
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-10 lg:gap-20 items-center">
@@ -52,7 +52,7 @@ export default function UnternehmenSection() {
               transition={{ duration: 0.8, delay: 0.2, ease: [0.16, 1, 0.3, 1] }}
             >
               <span className="text-accent text-[0.65rem] tracking-[0.2em] uppercase font-semibold block mb-3">
-                Unternehmen
+                Company
               </span>
             </motion.div>
 
@@ -73,7 +73,7 @@ export default function UnternehmenSection() {
               animate={isInView ? { opacity: 1, y: 0 } : {}}
               transition={{ duration: 0.8, delay: 0.5, ease: [0.16, 1, 0.3, 1] }}
             >
-              Seit über 30 Jahren in Wien
+              Over 30 Years in Vienna
             </motion.h3>
 
             <motion.p
@@ -83,9 +83,9 @@ export default function UnternehmenSection() {
               animate={isInView ? { opacity: 1, y: 0 } : {}}
               transition={{ duration: 0.8, delay: 0.65, ease: [0.16, 1, 0.3, 1] }}
             >
-              Gegründet in Wien, geprägt von Handscharbeit und technischer Exzellenz.
-              Das Team der RUDOLF GmbH steht für experiencia, Verlässlichkeit und die
-              hohe Qualität, die Wiener von einem traditionsreichen Betrieb erwarten.
+              Founded in Vienna, shaped by craftsmanship and technical excellence.
+              The RUDOLF GmbH team stands for experience, reliability and the
+              high quality that Viennese expect from a traditional company.
             </motion.p>
 
             <motion.div
@@ -96,10 +96,10 @@ export default function UnternehmenSection() {
               transition={{ duration: 0.8, delay: 0.8, ease: [0.16, 1, 0.3, 1] }}
             >
               {[
-                { value: '30+', label: 'Jahre Erfahrung' },
-                { value: '4', label: 'Fachgebiete' },
-                { value: '1150', label: 'Wien Standort' },
-                { value: '24/7', label: 'Erreichbarkeit' },
+                { value: '30+', label: 'Years Experience' },
+                { value: '4', label: 'Specialties' },
+                { value: '1150', label: 'Vienna Location' },
+                { value: '24/7', label: 'Availability' },
               ].map((stat) => (
                 <div key={stat.label}>
                   <div className="font-display text-navy-900 text-2xl md:text-3xl font-bold tracking-[-0.02em]">
@@ -119,7 +119,7 @@ export default function UnternehmenSection() {
               animate={isInView ? { opacity: 1, y: 0 } : {}}
               transition={{ duration: 0.8, delay: 0.95, ease: [0.16, 1, 0.3, 1] }}
             >
-              Kriemhildplatz 9 · 1150 Wien
+              Kriemhildplatz 9 · 1150 Vienna
             </motion.p>
           </div>
         </div>
